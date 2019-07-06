@@ -1,0 +1,12 @@
+{
+	"name": "at.noxmortem.noxlog",
+	"displayName": "NoxLog",
+	"version": "0.0.3-alpha",
+	"unity": "2019.1",
+	"description": "A simple Logging Utility for Unity with support for Editor Console Pro and Zenject",
+	"dependencies": { },
+	"files": [
+	"/NoxLog",
+	"LICENSE"
+	]
+}

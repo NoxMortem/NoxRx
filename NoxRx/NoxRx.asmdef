@@ -1,0 +1,16 @@
+{
+    "name": "NoxRx",
+    "references": [
+        "GUID:2e31385ce0f2dfa4da44b59682186cb6",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": []
+}
