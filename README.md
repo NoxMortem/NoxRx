@@ -26,6 +26,17 @@ var subject = new Subject<Unit>(); 			// Some IObservable<Unit>
 Bind(subject).To(unit => SomeMethod(unit));	// SomeMethod(Unit unit);
 ```
 
+## Rx{List|Map}{Watch|Signal}[ReadOnly]
+
+These classes allow to expose a different observable (e.g. a read only view on a mutable list) as the one used internally.
+```
+private readonly RxList<int> values = new RxList<int>();
+public readonly  RxListSignalReadOnly<ILodHierarchy> ValuesChanged => values.AsSignal().AsReadOnly();
+```
+
+* A watch exposes fine granularity on operation level observables and all underlying methods will propagate elements.
+* A signal exposes the more general observer pattern approach and allows ot do many changes and signal only once. A signal will never fire on it's own and needs to be triggered manually via `Signal()`.
+
 # Installation
 * Import the noxrx-version.unitypackage
 * Move the folder NoxRx/* folder to any assembly linked to any other you intend to use it from or create an asmdef and reference it
