@@ -31,7 +31,7 @@ Bind(subject).To(unit => SomeMethod(unit));	// SomeMethod(Unit unit);
 These classes allow to expose a different observable (e.g. a read only view on a mutable list) as the one used internally.
 ```
 private readonly RxList<int> values = new RxList<int>();
-public readonly  RxListSignalReadOnly<ILodHierarchy> ValuesChanged => values.AsSignal().AsReadOnly();
+public readonly  RxListSignalReadOnly<int> ValuesChanged => values.AsSignal().AsReadOnly();
 ```
 
 * A watch exposes fine granularity on operation level observables and all underlying methods will propagate elements.
