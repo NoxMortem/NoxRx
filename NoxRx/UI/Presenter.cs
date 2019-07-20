@@ -4,7 +4,7 @@ using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Infrastructure.Rx.UI
+namespace Infrastructure.NoxRx.UI
 {
 	public abstract class Presenter : MonoBehaviour
 	{

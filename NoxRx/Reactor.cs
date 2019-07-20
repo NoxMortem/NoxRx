@@ -4,7 +4,7 @@ using UniRx;
 using UnityEngine.UI;
 using Button = UnityEngine.UI.Button;
 
-namespace Infrastructure.Rx
+namespace Infrastructure.NoxRx
 {
 	public abstract class Reactor : IDisposable
 	{

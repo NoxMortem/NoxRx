@@ -2,7 +2,7 @@ using System;
 using UniRx;
 using UniRx.Async;
 
-namespace Infrastructure.Rx
+namespace Infrastructure.NoxRx
 {
 	public class CompositeBindable<T>
 	{
