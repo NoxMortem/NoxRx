@@ -26,6 +26,15 @@ var subject = new Subject<Unit>(); 			// Some IObservable<Unit>
 Bind(subject).To(unit => SomeMethod(unit));	// SomeMethod(Unit unit);
 ```
 
+## Rx{List|Map}
+
+These classes provide implementations for IList<T> and IDictionar<TK,TV> and provide operation granularity observables (Add, Remove, ...).
+Use them as a replacement for List<T> and Dictionary<TK,TV> whenever you require to subscribe to operations on those.
+```
+private readonly RxList<int> values = new RxList<int>();
+private readonly RxMap<int,int> values = new RxMap<int,int>();
+```
+
 ## Rx{List|Map}{Watch|Signal}[ReadOnly]
 
 These classes allow to expose a different observable (e.g. a read only view on a mutable list) as the one used internally.
